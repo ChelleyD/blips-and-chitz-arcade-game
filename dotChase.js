@@ -1,7 +1,21 @@
 $(document).ready(function () {
+  // //hide ball and dog
+  $(".cursor").hide();
+  $("#movingElement").hide();
+
   //User clicks start and it hides instructions screen
   $(".start").click(function () {
     $("#screenCover").hide()
+
+    // //show ball and dog
+    $(".cursor").show();
+    $("#movingElement").show();
+
+    //allows Snowball to follow the cursor
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 125) + "px; left: "+ (e.pageX - 125) + "px;");
+    })
   })
 
 

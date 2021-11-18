@@ -1,17 +1,18 @@
 /*--------------Game 3: Dot Chase--------------*/
 /* Tamika Dantes */
 html.dot-chase{
-  background-color: black;
   font-family: pixelated;
+  height: auto;
 }
 
 body {  
-  height: auto;
   width: auto;
-}
-
-.btn{
-  font-family: pixelated;
+  background-image: url("images/dot_chase/grass.jpeg");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 #gameBoard {
@@ -23,7 +24,7 @@ body {
 }
 
 #movingElement{
-  background-color: white;
+  background-color: gold;
   border: 2px solid gold;
   border-radius: 50%;
   width: 50px;
@@ -35,7 +36,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 
 /* dealing with the screen cover and it's elements */ 
 #screenCover {
@@ -54,19 +54,38 @@ body {
 }
 
 #dotChase-instructions{
-  background:white;
-  border: 2px solid black;
-}
-
-#update-message {
+  background: goldenrod;
+  border: 2px solid white;
   color: white;
+  font-size: 24px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
-/* .gameBoard {
-  width: 100%;
-  height: 100vh;
-} */
+.btn{
+  font-size: 150% !important;
+  background-color: goldenrod !important;
+  font-family: pixelated;
+}
 
+.update-message{
+  font-family: pixelated;
+  color: white;
+  text-align: center;
+}
+
+.cursor{
+  background-image: url("images/dot_chase/snowball.png");
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
 
 @font-face{
   font-family: pixelated;

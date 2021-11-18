@@ -25,10 +25,6 @@ body.speed-typing{
   opacity: 85%;
 }
 
- /* #returnHome {
-
- } */
-
 /* dealing with the screen cover and it's elements */ 
 .screenCover {
   background: rgba(0, 0, 0, 0.8);
@@ -70,6 +66,7 @@ body.speed-typing{
   width: 150px;
   font-family: pixelated;
   background-color: #2cc551 !important;
+  /* font-size: 150% !important; */
   }
 
 .congratulation-screen {  
@@ -77,10 +74,10 @@ body.speed-typing{
   height: 100vh;
   width: 100%;
   position: absolute;
- /*  background-color: rgba(0, 0, 0, 0.8); */
- background-color: rgba(236, 76, 59, 0.8);
+  /*  background-color: rgba(0, 0, 0, 0.8); */
+  background-color: rgba(236, 76, 59, 0.8);
   border: #fa9b90 5px solid;
-   color: darkred;
+  color: darkred;
 }
 
 .congratulation-screen h4 {
@@ -95,16 +92,28 @@ body.speed-typing{
   justify-content: center;
 }
 
+#lost{
+  font-size: 6.5vw;
+}
+
 .congratulation-screen .reset, .back-button {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
 }
 
+/* 
+Note: !important tag messes with button changing back to green on .congratulation-screen 
+*/
+
+#back-button, #reset{
+  background-color: darkred /* !important */;
+}
+
 .toggle {
   background-color: rgba(44, 197, 81, 0.8);
   border: greenyellow 5px solid;
-   color: white;
+  color: white;
 }
 
 
@@ -167,19 +176,14 @@ body.speed-typing{
   margin-right: auto;
 }
 
-/* #return-arrow{
-  width: 0px;
-  height: 0px;
-  border-top: 60px solid transparent;
-  border-left: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 60px solid white;
-} */
-
 #red-return-arrow{
   height: 100px;
   width: 150px;
   /* margin-top: 0.6vh; */
+}
+
+.btn, .btn-large{
+  font-size: 150% !important;
 }
 
 @keyframes sum {

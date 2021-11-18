@@ -1,7 +1,25 @@
 $(document).ready(function(){
+  // Tamika Dantes
+  let titleScreen = true;
+  //on click, title-screen and how-to-play fade out
+  $("#title-screen").on("click", () => {
+    $("#title-screen").fadeOut(600);
+  });
+
+  $("#how-to-play").on("click", () => {
+    $("#how-to-play").fadeOut(1000);
+  });
+  
   let password = "abc311fsf";
   
   let userCode = "";
+
+  /* //testing solution for ray screenshot
+  if (titleScreen == true) {
+    $('.game-selection').hide()
+  } else {
+    $('.game-selection').show()
+  } */
 
   //Jahiem Mcleod
   //Adding audio
@@ -63,6 +81,12 @@ $(document).ready(function(){
     console.log("GOT CODE 2")
     // set some html element near the code panel that will now show the code from speed typing 
   }
+
+  //if you have one of the code fragments, title-screen/how-to-play are hidden
+  if (sessionStorage.getItem("codeKey1") || sessionStorage.getItem("codeKey2")){
+    $("#title-screen").hide();
+    $("#how-to-play").hide();
+  }
   
   if(sessionStorage.getItem("codeKey2") && sessionStorage.getItem("codeKey1")){
    password = sessionStorage.getItem('codeKey1') + sessionStorage.getItem("codeKey2");
@@ -94,6 +118,10 @@ $(document).ready(function(){
       setTimeout(function(){
         $("#num-display").css({"background-color": "#148985", "border-color": "white"});
       }, 1000)
+
+      //if password is correct, title-screen/how-to-play are shown 
+      $("#title-screen").show();
+      $("#how-to-play").show();
       
     }else{
       console.log("Password Incorrect")

@@ -122,9 +122,11 @@ $(document).ready(function () {
         $(".congratulation-screen").show()
         $("#lost").text("You've Won!")
         $("#win").text("Here's the code!")
-         $("#homeBtn").show()
+        $("#homeBtn").show()
+        $("#back-button").css("background-color", "#2cc551")
         $(".reset").hide();
-       $(".congratulation-screen").toggleClass('toggle')
+        $(".or").hide();
+        $(".congratulation-screen").toggleClass('toggle')
 
        //generates random code and saves it in session storage
       //  let code1 = Math.floor(Math.random() * 10);

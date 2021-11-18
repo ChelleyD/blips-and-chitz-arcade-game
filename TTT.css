@@ -13,10 +13,6 @@ body.tic-tac-toe{
   background-size: cover;
 }
 
-#goldO, #blueX {
-
-}
-
 #player-tally{
   display: inline-block;
   width: 10%;
@@ -114,10 +110,12 @@ body.tic-tac-toe{
   width: 150px;
   background-color: #aa6dad !important;
   font-family: pixelated;
+  /* font-size: 150% !important; */
 }
 
 .back-button {
   text-align: center;
+  background-color: #aa6dad !important;
 }
 
 .congratulation-screen {
@@ -142,6 +140,10 @@ body.tic-tac-toe{
   height: 100px;
   width: 150px;
   /* margin-top: 75vh; */
+}
+
+.btn, .btn-large{
+  font-size: 150% !important;
 }
 
 @font-face{

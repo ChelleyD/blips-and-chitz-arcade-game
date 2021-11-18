@@ -1,0 +1,20 @@
+/* Tamika Dantes */
+.slider .indicators .indicator-item.active{
+  background-color: #25a79a !important;
+}
+
+@font-face{
+  font-family: pixelated;
+  src: url("fonts/slkscre.ttf");
+}
+
+#home-btn{
+  width: 100%;
+  font-size: 20px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

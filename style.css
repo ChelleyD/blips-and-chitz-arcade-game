@@ -1,10 +1,3 @@
-/* Tamika Dantes */
-.update-message{
-  font-family: pixelated;
-  color: #51a48e;
-  text-align: center;
-}
-
 /*--------------Main Screen: Splash Screen--------------*/
 /* Tamika Dantes */
 #tag-line-1{
@@ -42,19 +35,6 @@
   text-align: center;
 }
 
-#sticky-note {
-  border-bottom:1px ridge black;
-  border-right:1px ridge black;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 2px;
-  position: absolute;
-  min-width: 150px;
-  min-height: 120px;
-  padding: 5px;
-  background-color: yellow;
-}
-
 #portal{
   width: 80%;
   position: absolute;
@@ -66,13 +46,6 @@
   /* animation-iteration-count: infinite; //used for spin
   animation-timing-function: linear;  */
 }
-
-#sticky-note{
-  
-  background-color: yellow;
-  color: red;
-}
-
 
 @keyframes shrink {
   from {height: 790px;
@@ -151,6 +124,20 @@ body{
   border-right: 1vw solid black;
 }
 
+#sticky-note {
+  border-bottom:1px ridge black;
+  border-right:1px ridge black;
+  text-align: center;
+  font-size: clamp(0.5rem, 2vw, 2rem);
+  margin-top: 2px;
+  position: absolute;
+  min-width: 20vw;
+  min-height: 15vh;
+  padding: 5px;
+  background-color: yellow;
+  color: red;
+}
+
 #bottom-of-top{
   margin-bottom: -15.5vh;
   border-top: 15vh solid #611560;
@@ -205,6 +192,34 @@ body{
   font-size: clamp(1rem, 3vw, 3rem);
 }
 
+#title-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/main_screen/code quest title screen.png");
+  z-index: 20;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0; */
+}
+
+#how-to-play{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/main_screen/arcade machine instructions.png");
+  z-index: 10;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0; */
+}
+
 #game-title{
   color: white;
   position: relative;
@@ -215,7 +230,9 @@ body{
 
 .game-selection{
   color: white;
-  margin-left: 8.5vw;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 8.5vw; */
   position: relative;
 }
 
@@ -225,7 +242,9 @@ body{
 
 #c-p-select{
   color: #d6391b;
-  margin-left: 8.5vw;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 8.5vw; */
   position: relative;
 }
 #dotChase {
@@ -331,6 +350,14 @@ body .btn-large{
 
 #clear-btn, #submit-btn{
   font-size: clamp(0.5rem, 1vw, 1rem);
+}
+
+#blueprints{
+  position:absolute; 
+  bottom:0; 
+  right:0;
+  /* height: 50px;
+  width: 50px; */
 }
 
 @font-face{

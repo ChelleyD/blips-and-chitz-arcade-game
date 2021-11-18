@@ -26,9 +26,15 @@
 		<div id="dotChase-start-screen" class="container">
 			<div id="dotChase-instructions" class="row">
 				<h4 style="text"> Instructions:</h4>
-				<p>
-					Latin Latin Latin
-				</p>
+				<ul>
+          <li>
+            You are Snowball, who is relaxing in a backyard, when a ball suddenly appears. Your instincts cause you to chase it.
+          </li>
+          <br>
+          <li>Your task is to engage in this game of fetch and win all 3 rounds, within 30 seconds.</li>
+          <br>
+          <li>Remember to stay alert! The levels get increasingly tricky.</li>
+        </ul>
 			</div>
 
 			<div class="row">
@@ -39,10 +45,11 @@
     </div>
   </div>
 
-  <a href="index.html">Home</a>
+  <!-- <a href="index.html">Home</a> -->
   
-  <h1 id="update-message" >Arcade machine update needed to play this game.<a href="index.html"> Return to main screen.</a></h1> 
-  <!-- <h1 class="update-message" >Testing phase.<a href="index.html"> Return to main screen.</a></h1>  -->
+  <h4 class="update-message" style="margin-top:0px;">Arcade machine update needed to play this game.</h4> 
+  <h4 class="update-message" style="margin-top:-7px;"><a href="index.html" style="color:blue;"> Return to main screen.</a></h4>
+  
     <!-- Timer -->
     <div id="timerUi">
       <h5 style="display:inline-block; color:white;">Timer: </h5>
@@ -56,6 +63,7 @@
 
     <div id="gameBoard" class="">      
       <div id="movingElement"></div> 
+      <div class="cursor"></div>
     </div>
     
   </body>

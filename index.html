@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="main-screen">
 
@@ -48,13 +47,17 @@
 
 		<div id="outter-screen">
 			<div id="inner-screen">
-				<p id="game-title" style="margin-bottom:-7vh;">Code-Quest</p>
+        <div id="title-screen"></div>
+
+        <div id="how-to-play"></div>
+        
+				<p id="game-title" style="margin-bottom:-7vh;">Code Quest</p>
 				<p  style="margin-bottom:-5vh;">
-          <a id="speedTyping" href="speedTyping.html" class="game-selection">Prison-Break</a></p>
+          <a id="speedTyping" href="speedTyping.html" class="game-selection">Prison Break</a></p>
 				<p  style="margin-bottom:-5vh;">
           <a id="TTT" href="TTT.html" class="game-selection">Wrenchs & Gears</a></p>
 				<p style="margin-bottom:-5vh;">
-          <a id="dotChase" href="dotChase.html" class="game-selection" >WIP-Dot Chase</a>
+          <a id="dotChase" href="dotChase.html" class="game-selection" >Dot Chase</a>
         </p>
 				<p id="c-p-select">Code Panel</p>
 			</div>
@@ -67,12 +70,6 @@
   
   <!-- code panel -->
 	<div id="code-panel" class="container">
-
-    <!-- get rid of button below when done testing session storage -->
-    <button id="resetStorage">reset session storage</button>
-    <!-- todelete above -->
-    
-    <p id="testing" class="row col s12"></p>
 		<!-- display -->
 		<div class="row">
 			<!-- <form id="num-display" class="col s12" action="">
@@ -112,9 +109,13 @@
       <p id="num0" class="numButton btn-large col s4" style="margin-top:-20px; margin-bottom:-10px;">0</p>
       <p id="submit-btn" class="btn-large col s4" style="margin-top:-20px; margin-bottom:-10px;">submit</p>
     </div>
+	</div>
 
-    
-  
-  
+  <div id="blueprints">
+    <a href="blueprints.html">
+      <!-- <p style="margin-bottom:-4px; color:white; font-size:150%;">blueprints</p> -->
+      <img src="images/main_screen/blueprints icon.png" alt="" height="100px" width="120px">
+    </a>
+  </div>
 </body>
 </html>
